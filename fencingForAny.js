@@ -1,10 +1,12 @@
-const fencingForAny = (edges, numOfWires, rate) =>{
- let perimeter = 0 ;
-    for (let i = 0; i<edges.length; i++){
-        perimeter = perimeter + edges[i];
-    }
- 
- return perimeter*numOfWires*rate;
-}
+const fencingForAny = (edges, numOfWires, rate) => {
+    let sum = 0;
+    //     for (i = 0; i < edges.length; i++) {
+    //         perimeter = perimeter + edges[i];
+    //     }
 
-console.log(fencingForAny([30, 20, 30, 20], 5, 10));
+    edges.forEach(element =>
+        sum = sum + element
+    )
+    return sum * numOfWires * rate;
+}
+console.log(`The total cost for fencing is Rs. ${fencingForAny([10, 15, 10, 10, 10, 10, 22], 5, 10)}`);
