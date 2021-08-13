@@ -9,4 +9,4 @@ const fencingForAny = (edges, numOfWires, rate) => {
     )
     return sum * numOfWires * rate;
 }
-console.log(`The total cost for fencing is Rs. ${fencingForAny([10, 15, 10, 10, 10, 10, 22], 5, 10)}`);
+console.log(`The total cost for fencing is Rs. ${fencingForAny([10, 15, 10, 10, 10, 10, 22], 5, 10)}`); 

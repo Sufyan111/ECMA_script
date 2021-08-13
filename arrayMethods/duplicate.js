@@ -1,0 +1,3 @@
+const dupilcate=(arr)=>{
+    
+}
